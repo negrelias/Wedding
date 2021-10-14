@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    @font-face {
+        font-family: fonteli;
+        src: url(meufont.ttf);
+    }
+
+}
+
+
+.container{
+    
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid goldenrod;
+    border-top: 3px solid goldenrod;
+    
+}
+
+.logo{
+    margin-top: 10px;
+    border-bottom: 4px solid goldenrod;
+    border-top: 4px solid goldenrod;
+}
+
+.logo h1{
+    text-shadow: 2px 2px;
+    font-family: fonteli;
+}
+
+
+.navbar{
+    display: inline-block;
+}
+
+.nav li{
+ margin: 10px;
+ font-family: fonteli;
+ font-size: 1.5;
+}
+
+.nav a{
+    color: gray;
+    text-decoration: none;
+}
+
+
+
+/* main */
+
+.section{
+    height: 400px;
+    margin-top: 50px;
+    
+}
+
+.parallax{
+    width: 100%;
+    height: 500px;
+    background: url(./couple-1850073_960_720.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 4px solid goldenrod;
+    
+}
+
+.conteudo{
+    background-color:lightyellow;
+    display: flex;
+    margin-top: 30px;
+    overflow: hidden;
+    border-top: 4px solid goldenrod;
+    border-bottom: 4px solid goldenrod;
+}
+.sobre h4{
+    color: red;
+    margin-top: 80px;
+    margin-left: 70px;
+    font-family: fonteli;
+    font-size: 1.5;
+    animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+        
+    }
+
+    @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+.sobre img{
+    height:350px;
+    padding-left: 40px;
+}
+.sobre p{
+    text-align: center;
+    float: right;
+    font-family: fonteli;
+    font-size: 1.5;
+    padding-right: 40px;
+    
+}
+
+span{
+    position:relative;
+    top: 90px;
+    left:400px;
+}
+
+@media only screen and (max-width: 600px) {
+    .conteudo{
+        position: relative;
+        bottom: 300px;
+    }
+    .sobre img{
+     width: 500px;
+     padding-right: 40px;
+    }
+
+    .sobre h4{
+        text-align: center;
+        padding-left: 20px;
+    }
+    .sobre p{
+     font-size: 16px;
+     padding-left: 20px;
+     padding-top: 10px;
+    }
+}
+
+
+
+/* footer */
+
+.form{
+    background-color: rgb(202, 168, 168);;
+    width: 100%;
+    height: 150px;
+    border-top: 4px solid goldenrod;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.form p{
+    font-family: fonteli;
+    font-size: 2.5;
+    margin-left: 40px;
+
+}
+
+@media only screen and (max-width: 600px){
+    .form{
+       position: relative;
+       bottom: 200px;
+       height: 200px;
+       align-items: center;
+    }
+}
